@@ -29,7 +29,7 @@ module.exports = {
       const commands = await client.commands;
 
       let emx = new MessageEmbed()
-        .setDescription(`\*\*List all command\*\*`)
+        .setDescription(`\*\*${prefix}help\*\*`, client.user.displayAvatarURL())
         .setColor("GREEN")
         .setThumbnail(client.user.displayAvatarURL())
         .setTimestamp()
