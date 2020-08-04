@@ -29,7 +29,7 @@ module.exports = {
       const commands = await client.commands;
 
       let emx = new MessageEmbed()
-        .setDescription("Join my server or Die :D")
+        .setDescription(`${prefix}command`)
         .setColor("GREEN")
         .setThumbnail(client.user.displayAvatarURL())
         .setTimestamp()
