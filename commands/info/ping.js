@@ -10,7 +10,7 @@ module.exports = {
        const msg = await message.channel.send('🏓 Pinging....')
        const embed = new MessageEmbed()
        .setTitle('🏓PONG!🏓')
-       .setDescription(`🏓🏓🏓\nLatency is ${Math.floor(msg.createdTimestamp - message.createdTimestamp)}MS\nAPI Latency is ${Math.round(client.ws.ping)}MS\n🏓🏓🏓`)
+       .setDescription(`🏓🏓🏓\nLatency is ${Math.floor(msg.createdTimestamp - message.createdTimestamp)} MS\nAPI Latency is ${Math.round(client.ws.ping)} MS\n🏓🏓🏓`)
        .setColor('RANDOM')
        msg.edit(embed)
     }
