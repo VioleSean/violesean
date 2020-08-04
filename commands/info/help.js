@@ -30,8 +30,10 @@ module.exports = {
       let emx = new MessageEmbed()
         .setDescription("Join my server or Die :D")
         .setColor("GREEN")
+        .setThumbnail(client.user.displayAvatarURL())
+        .setTimestamp()
         .setFooter(client.user.username, client.user.displayAvatarURL())
-        .setThumbnail(client.user.displayAvatarURL());
+        
 
       let com = {};
       for (let comm of commands.array()) {
