@@ -19,6 +19,7 @@ module.exports = {
         .setAuthor(command.name, client.user.displayAvatarURL())
         .addField("Description", command.description || "Not Provided :(")
         .addField("Usage", "`" + command.usage + "`" || "Not Provied")
+        .setTimestamp()
         .setThumbnail(client.user.displayAvatarURL())
         .setColor("GREEN")
         .setFooter(client.user.username, client.user.displayAvatarURL());
