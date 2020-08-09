@@ -1,4 +1,4 @@
-const { token, prefix } = require("./config.json")
+const { prefix } = require("./config.json")
 const { config } = require("dotenv");
 const discord = require("discord.js") //Gonna use Discord.js Module xD
 const client = new discord.Client({
@@ -66,4 +66,4 @@ client.on("guildMemberAdd", (member) => {
 })
 
 
-client.login(token)
+client.login(process.env.TOKEN)
