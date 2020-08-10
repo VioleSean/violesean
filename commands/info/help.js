@@ -30,7 +30,8 @@ module.exports = {
         .setDescription("Join my server or Die :D")
         .setColor("GREEN")
         .setFooter(client.user.username, client.user.displayAvatarURL())
-        .setThumbnail(client.user.displayAvatarURL());
+        .setThumbnail(client.user.displayAvatarURL())
+        .setTimestamp();
 
       let com = {};
       for (let comm of commands.array()) {
