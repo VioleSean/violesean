@@ -26,7 +26,7 @@ name: "imdb",
     .addField("Languages", movie.languages, true)
     .addField("Season", movie.totalseasons, true)
     .addField("Episode", movie._episodes, true)
-    .addField("Year", movie.start_year, movie.end_year, true)
+    .addField("Year", movie.start_year, true)
     .addField("Type", movie.type, true)
     .addField("Release", movie.released, true);
     
