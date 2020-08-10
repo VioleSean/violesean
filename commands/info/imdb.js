@@ -24,7 +24,7 @@ name: "imdb",
     .addField("Country", movie.country, true)
     .addField("Languages", movie.languages, true)
     .addField("Type", movie.type, true)
-    .addField("Ratings",`⭐${movie.rating`)
+    .addField("Ratings",`⭐${movie.rating}`)
     .addField("Year", movie._yearData, true)
     .addField("Release", movie.released, true);
     
