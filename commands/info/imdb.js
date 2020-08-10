@@ -26,7 +26,7 @@ name: "imdb",
     .addField("Year", movie._yearData, true)
     .addField("Type", movie.type, true)
     .addField("⭐Ratings", movie.rating, true)
-    .setFooter(`Release: ${movie.released}`);
+    .addField("Release", movie.released, true);
     
     
     message.channel.send(embed)
