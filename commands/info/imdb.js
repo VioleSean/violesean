@@ -21,12 +21,12 @@ name: "imdb",
     .setColor("#ff2050")
     .setThumbnail(movie.poster)
     .setDescription(movie.plot)
-    .setFooter(`⭐Ratings: ${movie.rating}`)
     .addField("Country", movie.country, true)
     .addField("Languages", movie.languages, true)
     .addField("Year", movie._yearData, true)
     .addField("Type", movie.type, true)
-    .addField("Release", movie.released, true);
+    .addField(`⭐Ratings: ${movie.rating}`)
+    .setFooter("Release", movie.released, true)
     
     
     message.channel.send(embed)
