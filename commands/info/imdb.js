@@ -23,7 +23,7 @@ name: "imdb",
     .setDescription(movie.plot)
     .setFooter(`⭐Ratings: ${movie.rating}`)
     .addField("Country", movie.country, true)
-    .addFields('\u200B', '\u200B')
+    .addFields({name:'\u200B', value:'\u200B'})
     .addField("Languages", movie.languages, true)
     .addField("Year", movie._yearData, true)
     .addField("Type", movie.type, true)
