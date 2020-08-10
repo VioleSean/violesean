@@ -23,9 +23,9 @@ name: "imdb",
     .setDescription(movie.plot)
     .addField("Country", movie.country, true)
     .addField("Languages", movie.languages, true)
-    .addField("Year", movie._yearData, true)
     .addField("Type", movie.type, true)
     .addField("⭐Ratings", movie.rating, true)
+    .addField("Year", movie._yearData, true)
     .addField("Release", movie.released, true);
     
     
