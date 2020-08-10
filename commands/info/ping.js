@@ -7,7 +7,7 @@ module.exports = {
     message.channel.send(`🏓 Pinging . . . .`).then((msg) => {
       const _ = new Discord.MessageEmbed()
         .setTitle("🏓Pong🏓")
-        .setDescription(`🏓🏓🏓\nLatency is \*\*${Math.floor(msg.createdTimestamp - message.createdTimestamp)}\*\* MS\nAPI Latency is \*\*${Math.round(bot.ws.ping)}\*\* MS\n🏓🏓🏓`)
+        .setDescription(`🏓🏓🏓\nLatency is \*\*${Math.floor(msg.createdTimestamp - message.createdTimestamp)}\*\* MS\nAPI Latency is \*\*${Math.round(client.ws.ping)}\*\* MS\n🏓🏓🏓`)
         .setColor("RANDOM");
       msg.edit(_);
       msg.edit("\u200B");
