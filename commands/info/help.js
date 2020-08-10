@@ -1,4 +1,5 @@
 const { MessageEmbed } = require("discord.js");
+const {prefix} = require('../../config.json');
 
 module.exports = {
   name: "help",
@@ -27,7 +28,7 @@ module.exports = {
       const commands = await client.commands;
 
       let emx = new MessageEmbed()
-        .setDescription("help")
+        .setDescription(`${prefix}help`)
         .setColor("GREEN")
         .setFooter(client.user.username, client.user.displayAvatarURL())
         .setThumbnail(client.user.displayAvatarURL())
