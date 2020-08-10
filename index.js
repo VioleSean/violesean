@@ -5,7 +5,6 @@ const client = new discord.Client({
   disableEveryone: true 
 });
 
-const db = require("quick.db")
 
 client.commands = new discord.Collection();
 client.aliases = new discord.Collection();
