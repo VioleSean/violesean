@@ -24,6 +24,8 @@ name: "imdb",
     .setFooter(`⭐Ratings: ${movie.rating}`)
     .addField("Country", movie.country, true)
     .addField("Languages", movie.languages, true)
+    .addField("Season", movie.season, true)
+    .addField("Episode", movie.episode, true)
     .addField("Year", movie._yearData, true)
     .addField("Type", movie.type, true)
     .addField("Release", movie.released, true);
